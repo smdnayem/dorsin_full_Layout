@@ -25,6 +25,38 @@ p {
 header {
   background-color: #4b2996e1;
 }
+
+/* Animated-Gear */
+
+.animated-gear {
+  position: fixed;
+  float: left;
+  z-index: 5;
+}
+
+.gear-box {
+  display: inline-block;
+  background-color: rgb(36, 206, 121);
+  padding: 5px;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animation-img {
+  width: 30px;
+  position: relative;
+  animation: animate 5s linear 0s infinite;
+}
+
+/* Animated-Gear end*/
+
 .btn {
   background-color: #fb3e3e;
   padding: 0.8rem 1.5rem;
@@ -697,7 +729,6 @@ footer {
   height: 80px;
   float: left;
   width: 100%;
-  
 }
 .foot {
   display: inline-block;
@@ -708,9 +739,8 @@ footer {
 .footer-left-x {
   line-height: 40px;
   font-size: 1rem;
-  
 }
-.footer-left-x h4{
+.footer-left-x h4 {
   font-weight: 400;
   color: #fff;
 }
